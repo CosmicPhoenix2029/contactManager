@@ -12,7 +12,7 @@ export class NotesComponent implements OnInit, AfterViewInit{
     @Input() notes!: Notes[];
 
     displayedColumns: string[] = ['position', 'Title', 'Date'];
-    dataSource: MatTableDataSource<Notes> | undefined;
+    dataSource!: MatTableDataSource<Notes>;
 
     @ViewChild(MatPaginator) paginator!: MatPaginator;
 
