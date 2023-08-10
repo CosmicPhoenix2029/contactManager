@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { User } from '../../models/user';
 import { ActivatedRoute, Params } from '@angular/router';
 import { UserService } from '../../services/user.service';
@@ -9,7 +9,7 @@ import { UserService } from '../../services/user.service';
   styleUrls: ['./main-content.component.scss']
 })
 
-export class MainContentComponent {
+export class MainContentComponent implements OnInit{
 
   user!: User | undefined;
   constructor(private route: ActivatedRoute, private service: UserService) {}

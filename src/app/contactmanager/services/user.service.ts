@@ -39,6 +39,6 @@ export class UserService {
   }
 
   getUserById(id: number): User | undefined {
-    return this.dataStore.users.find(user => user.id === id);
+    return this.dataStore.users.find(user => user.id == id);
   }
 }

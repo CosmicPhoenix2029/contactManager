@@ -17,11 +17,13 @@ import { NotesComponent } from './components/notes/notes.component';
 import { MatTableModule } from '@angular/material/table';
 
 const routes: Routes = [
-  { path: '', component: ContactmanagerAppComponent, 
-  children: [
-    { path: ':id', component: MainContentComponent },
-    { path: '', component: MainContentComponent }    
-  ]},
+  {
+    path: '', component: ContactmanagerAppComponent,
+    children: [
+      { path: ':id', component: MainContentComponent },
+      { path: '', component: MainContentComponent }
+    ]
+  },
   { path: '**', redirectTo: '' }
 ];
 
