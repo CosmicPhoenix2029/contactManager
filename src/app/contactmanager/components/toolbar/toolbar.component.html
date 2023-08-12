@@ -11,6 +11,7 @@
     <button mat-button [matMenuTriggerFor]="menu" type="button"><mat-icon>more_vert</mat-icon></button>
     <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="openAddContactDialog()">New Contact</button>
+        <button mat-menu-item (click)="toggleTheme.emit()">Toggle theme</button>
     </mat-menu>
 
 </mat-toolbar>
